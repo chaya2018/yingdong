@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1228,user-scalable=yes" />
+		<title>资讯热点详情页</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+		<script src="js/swiper-4.2.2.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="http://cdn.staticfile.org/js-url/2.4.1/url.min.js"></script>
+	</head>
+	<style type="text/css">
+		.un{
+			text-align: justify;
+			cursor: pointer;
+			font-size: 13px;
+		}
+		.un:hover{
+			color:red;
+		}
+		.fenge{
+			width: 100%;
+			height: 1px;
+			margin: 15px 0;
+			border-bottom: 1px dashed rgba(0,0,0,0.1);
+		}
+	</style>
+	<body>
+		<div class="wrapper" style="background: #fff;">
+
+			<!--头部-->
+			<div id="top">
+				<div class="header">
+					<div class="logo">
+						<img src="img/logo.jpg" />
+					</div>
+					<div class="nav">						
+						<a href="index.html" class="nav_a"></a>						
+						<a href="events.html" class="nav_a active"></a>						
+						<a href="films.html" class="nav_a"></a>						
+						<a href="actors.html" class="nav_a"></a>						
+						<a href="about_yingdong.html" class="nav_a"></a>
+						<div class="lan">
+							<span id="china"></span>
+							<span id="_line"></span>
+							<span id="jp"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部结束-->
+						
+			<div id="hotspot_details_container" style="margin-top: 110px;">
+				<div class="content">
+					<!-- <div class="pics">
+						<div class="star star1">
+							<img src="img/hotspot_details/star.png" />
+						</div>
+						<div class="star star2">
+							<img src="img/hotspot_details/star.png" />
+						</div>
+						<img src="img/hotspot_details/hotspot01.jpg" />
+						<img src="img/hotspot_details/hotspot02.jpg" />
+						<img src="img/hotspot_details/hotspot03.jpg" />
+					</div> -->
+					<div class="main">
+						<div class="news">
+							<h1 class="title"></h1>
+							<h5>2018-06-19&nbsp;&nbsp;&nbsp;&nbsp;来源：赢动影视</h5>
+							<div>
+								<h4 id="notes"></h4>
+							</div>
+							<div class="one"></div>							
+							<img class="img1" src="" />
+							<img class="img0" src="" />							
+							<h3 class="title2"></h3>
+							<div class="p1"></div>
+							<h3 class="title3"></h3>
+							<img class="img2" src="" />
+							<div class="p2"></div>
+							<h3 class="title4"></h3>
+							<img class="img3" src="" />
+							<div class="p3"></div>
+							<h3 class="title5"></h3>
+							<img class="img4" src="" />
+							<div class="p4"></div>
+							<h3 class="title6"></h3>
+							<div class="p5"></div>
+							<h3 class="title7"></h3>
+							<div class="p6"></div>
+							<img class="img5" src="" />
+							<img class="img6" src="" />
+							<img class="img7" src="" />
+							<img class="img8" src="" />
+							<img class="img9" src="" />
+							<img class="img10" src="" />
+							<img class="img11" src="" / style="width: 800px;">
+							<img class="img12" src="" />
+						</div>
+						<div class="side">
+							<h1 class="cn">推荐资讯</h1>
+							<h1 class="ja">OTHER</h1>
+							<div class="other">
+								
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--页脚-->
+			<div id="footer" style="background: #fff;">
+				<div class="switch">
+					<a href="about_yingdong.html">关于赢动</a>
+					<a href="javascript:void(0)">官方微博</a>
+					<a href="about_yingdong.html">联系方式</a>
+				</div>
+				<p>赢动影视传媒官方网址:www.winspeedfilm.cn</p>
+				<p>沪ICP备17027591号 Copyright@ 2016-2036 上海赢动影视传媒有限公司 版权所有</p>
+			</div>
+			<!--页脚结束-->
+		</div>
+	</body>
+	<script type="text/javascript">
+		var id = url("?id");
+		var title; 
+		var note;
+		var one; 
+		var img1; 
+		var img0; 
+		var img2; 
+		var img3;
+		var img4; 
+		var img5;
+		var img6;
+		var img7;
+		var img8;
+		var img9;
+		var img10;
+		var img11;
+		var img12;
+		var title2; 
+		var p1;
+		var title3; 
+		var p2;
+		var title4; 
+		var p3;
+		var title5; 
+		var p4;
+		var title6; 
+		var p5;
+		var title7; 
+		var p6;
+
+		for(var i=0; i<eventData.length; ++i){											
+			if(eventData[i].id == id){
+				title = eventData[id-1].title;
+				note = eventData[id-1].note;   
+				one = eventData[id-1].one; 
+				img1 = eventData[id-1].img1; 
+				img0 = eventData[id-1].img0; 
+				img2 = eventData[id-1].img2;  
+				img3 = eventData[id-1].img3;
+				img4 = eventData[id-1].img4;
+				img5 = eventData[id-1].img5;
+				img6 = eventData[id-1].img6;
+				img7 = eventData[id-1].img7;
+				img8 = eventData[id-1].img8;
+				img9 = eventData[id-1].img9;
+				img10 = eventData[id-1].img10;  
+				img11 = eventData[id-1].img11;
+				img12 = eventData[id-1].img12;  
+				title2 = eventData[id-1].title2;
+				p1 = eventData[id-1].p1; 
+				title3 = eventData[id-1].title3;
+				p2 = eventData[id-1].p2; 
+				title4 = eventData[id-1].title4;
+				p3 = eventData[id-1].p3; 
+				title5 = eventData[id-1].title5;
+				p4 = eventData[id-1].p4; 
+				title6 = eventData[id-1].title6;
+				p5 = eventData[id-1].p5; 
+				title7 = eventData[id-1].title7;
+				p6 = eventData[id-1].p6; 
+			}	
+					
+		}
+		// $(".un").html(un)
+		$(".title").html(title)
+		$("#notes").html(note)
+		$(".one").html(one)
+		$(".img1").attr("src",img1)
+		$(".img0").attr("src",img0)
+		$(".img2").attr("src",img2)
+		$(".img3").attr("src",img3)
+		$(".img4").attr("src",img4)
+		$(".img5").attr("src",img5)
+		$(".img6").attr("src",img6)
+		$(".img7").attr("src",img7)
+		$(".img8").attr("src",img8)
+		$(".img9").attr("src",img9)
+		$(".img10").attr("src",img10)
+		$(".img11").attr("src",img11)
+		$(".img12").attr("src",img12)
+		$(".title2").html(title2)
+		$(".p1").html(p1)
+		$(".title3").html(title3)
+		$(".p2").html(p2)
+		$(".title4").html(title4)
+		$(".p3").html(p3)
+		$(".title5").html(title5)
+		$(".p4").html(p4)
+		$(".title6").html(title6)
+		$(".p5").html(p5)
+		$(".title7").html(title7)
+		$(".p6").html(p6)
+		//实时动态详情页推荐资讯
+		for (var m=0; m<eventData.length; ++m) {	
+			if (eventData[m].id != id) {
+				$("#hotspot_details_container .other").append(
+				'<a href="hotspot_details.html?id='+(m+1)+'" class="un">'+eventData[m].title+'</a>'+
+				'<div class="fenge"></div>'
+				)
+			}	
+
+		}
+	</script>
+
+</html>

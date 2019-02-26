@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=1208,user-scalable=yes" />
+		<title>首页</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+		<script src="js/swiper-4.2.2.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/translate.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+
+			<!--头部-->
+			<div id="top">
+				<div class="header">
+					<a href=""><img src="img/logo.jpg" /></a>
+					<ul>
+						<li class="active">
+							<a href="index.html" class="nav_a"></a>
+						</li>
+						<li>
+							<a href="events.html" class="nav_a"></a>
+						</li>
+						<li>
+							<a href="films.html" class="nav_a"></a>
+						</li>
+						<li>
+							<a href="actors.html" class="nav_a"></a>
+						</li>
+						<li>
+							<a href="about_yingdong.html" class="nav_a"></a>
+						</li>
+						<li>
+							<span id="china"></span><span id="_line"></span><span id="jp"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--头部结束-->
+
+			<!--轮播-->
+			<div id="figure" style="top: 110px;">
+				<div class="swiper-container swiper-container-horizontal banner01">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/index/01.jpg" />
+						</div>
+						 <div class="swiper-slide">
+							<img src="img/index/02.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/index/03.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/index/04.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/index/05.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/index/06.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/index/07.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="img/index/08.jpg" />
+						</div>
+						<div class="swiper-slide">							
+							<a href="film_play.html?id=8">
+								<img src="img/index/09.jpg" />
+						    </a>
+						</div>
+						<div class="swiper-slide">
+							<a href="film_play.html?id=8">
+								<img src="img/index/10.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="film_play.html?id=7">
+								<img src="img/index/11.jpg" />
+							</a>
+						</div> 
+					</div>
+					<div class="swiper-pagination swiper-pagination-bullets">
+						<span class="swiper-slide swiper-slide-active blue"></span>
+						<span class="swiper-slide swiper-slide-next blue"></span>
+					</div>
+				</div>
+				<div id="arrow">
+					<div class="prev">
+						<div class="_arrow">
+							<div class="top"></div>
+							<div class="left"></div>
+						</div>
+					</div>
+					<div class="next">
+						<div class="_arrow prev_arrow">
+							<div class="top"></div>
+							<div class="left"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--轮播结束-->
+
+			<div id="index_container" style="margin-top: 110px;">
+				<p>视频</p>
+				<a href="film_more.html">更多</a>
+				<div>
+					<div class="hotspot" style="overflow: hidden;">
+						<div class="video">
+							<iframe width="100%" height="100%"  scrolling="no" frameborder="0" src="http://player.youku.com/embed/XMzY5OTU5MTU3Mg==" allowfullscreen=""></iframe>
+						<!-- <video width="667" autoplay="autoplay" controls poster="img/video02.jpg">
+							<source src="" ></source>
+						</video> -->
+						</div>
+						<div class="video-right flex">
+							<a href="film_play.html?id=1&&category=1">
+			            		<div class="flex small01">
+			            			<div class="video-img">
+			            				<img src="img/index/video03.png">
+			            			</div>
+			            			<div class="video-describe">《慧眼特攻/OPERATION ES》<br />终极版预告1</p>
+			            			</div>
+			            		</div>
+		            		</a>
+		            		<a href="film_play.html?id=2&&category=1">
+			            		<div class="flex small02">
+			            			<div class="video-img">
+			            				<img src="img/index/video01.png">
+			            			</div>
+			            			<div class="video-describe">《慧眼特攻/OPERATION ES》<br />终极版预告2</p>
+			            			</div>
+			            		</div>
+			            	</a>
+		            		<a href="film_play.html?id=4&&category=1">
+			            		<div class="flex small03">
+			            			<div class="video-img">
+			            				<img src="img/index/video02.png">
+			            			</div>
+			            			<div class="video-describe">《慧眼特攻/OPERATION ES》<br />MV（片头+片尾）</p>
+			            			</div>
+			            		</div>
+			            	</a>
+            			</div>
+					</div>
+				</div>
+				<p>实时动态</p>
+				<a href="events.html">更多</a>
+				<div style="margin-bottom: 40px;">
+					<!-- <div class="film">
+						<div class="describe">
+							<div class="words">
+								<a href="hotspot_details.html">
+									<h1>超时空同居</h1>
+									<h2>如有"雷佟"纯属天意</h2>
+									<p>一个想骗钱反被骗的2018年女生，一个竭尽全力拉投资却卷进害老板事件的1999年男生，一觉醒来时空发生重叠两人睡在一张床上，更惊喜的是两人通过自己的房门可以将对方带到自己的年代。一系列投机作弊的合伙行为引发种种爆笑事件，可他们却不知道他俩紧密的宿命联系竟然掌握在早就知道这一切的神秘人手里......</p>
+								</a>
+							</div>
+							<div class="play">
+								<a href="film_play.html">立即播放</a>
+							</div>
+						</div>
+						<div class="pics">
+							<a href="hotspot_details.html"><img src="img/index/index04.jpg" /></a>
+						</div>
+					</div> -->
+					<ul class="shadow dongtai">
+						<!-- <li>
+							<a href="film_play.html">
+								<div class="imgs">
+									<img src="img/index/index05.jpg" />
+								</div>
+								<p>一出好戏</p>
+								<p>8月10日 全国上映</p>
+							</a>
+						</li>
+						<li>
+							<a href="film_play.html">
+								<div class="imgs">
+									<img src="img/index/index06.jpg" />
+								</div>
+								<p>阳台上</p>
+								<p>六月一日 天真有邪</p>
+							</a>
+						</li>
+						<li>
+							<a href="film_play.html">
+								<div class="imgs">
+									<img src="img/index/index07.jpg" />
+								</div>
+								<p>动物世界</p>
+								<p>8月29日 赌命入局</p>
+							</a>
+						</li>
+						<li>
+							<a href="film_play.html">
+								<div class="imgs">
+									<img src="img/index/index08.jpg" />
+								</div>
+								<p>金钱世界</p>
+								<p>有钱人跟你想的不一样</p>
+							</a>
+						</li>
+						<li>
+							<a href="film_play.html">
+								<div class="imgs">
+									<img src="img/index/index09.jpg" />
+								</div>
+								<p>英雄本色2018</p>
+								<p>再做一次兄弟同闯一片江湖</p>
+							</a>
+						</li> -->
+					</ul>
+				</div>
+				<!-- <p>动漫</p>
+				<div>
+					<div class="anime">
+						<div class="describe">
+							<div class="words">
+								<a href="hotspot_details.html">
+									<h1>熊出没·变形记</h1>
+									<h2>春节就看熊出没 全家一起更欢乐</h2>
+									<p>光头强爸爸突然到访狗熊岭，向来严厉古板的强爸一反常态，对光头强嘘寒问暖，而朝夕相处却未能缓和关系，反而导致了父子矛盾的爆发...在一次激烈的争吵中，光头强和两熊被缩小机器意外缩小，毫不知情的强爸伤心离开，并无意间带走了"缩小机"。于是，光头强和两熊踏上了追赶强爸和机器的"微观世界"冒险之旅......</p>
+								</a>
+							</div>
+							<div class="play">
+								<a href="film_play.html">立即播放</a>
+							</div>
+						</div>
+						<div class="pics">
+							<a href="hotspot_details.html"><img src="img/index/index10.jpg" /></a>
+						</div>
+					</div>
+					<ul class="shadow">
+						<li>
+							<a href="">
+								<div class="imgs">
+									<img src="img/index/index11.jpg" />
+								</div>
+								<p>昨日青空</p>
+								<p>繁花献给终将光芒万丈的我们</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="imgs">
+									<img src="img/index/index12.jpg" />
+								</div>
+								<p>查理九世</p>
+								<p>无冒险 不少年</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="imgs">
+									<img src="img/index/index13.jpg" />
+								</div>
+								<p>大世界</p>
+								<p>我们都想改变命运 我们终被命运改变</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="imgs">
+									<img src="img/index/index14.jpg" />
+								</div>
+								<p>烟花</p>
+								<p>去年一起《你的名字》！今年一...</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="imgs">
+									<img src="img/index/index15.jpg" />
+								</div>
+								<p>大护法</p>
+								<p>感谢给我逆境的众生</p>
+							</a>
+						</li>
+					</ul>
+				</div> -->
+				<!-- <p>艺人</p>
+				<a href="actors_details.html">更多</a>
+				<div>
+					<div class="actors">
+						<div class="up">
+							<div class="left">
+								<div>
+									<div class="one op">
+										<a href="actors_details.html">
+											<img src="img/index/act01.jpg" />
+										</a>
+									</div>
+									<div class="two op">
+										<a href="actors_details.html">
+											<img src="img/index/act02.jpg" />
+										</a>
+									</div>
+								</div>
+								<div>
+									<div class="one op">
+										<a href="actors_details.html">
+											<img src="img/index/act04.jpg" />
+										</a>
+									</div>
+									<div class="two op">
+										<a href="actors_details.html">
+											<img src="img/index/act05.jpg" />
+										</a>
+									</div>
+									<div class="three op">
+										<a href="actors_details.html">
+											<img src="img/index/act06.jpg" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="right op"><a href="actors_details.html">
+								<img src="img/index/act03.jpg" /></a>
+							</div>
+						</div>
+						<div class="down">
+							<div class="one op"><a href="actors_details.html">
+								<img src="img/index/act07.jpg" /></a>
+							</div>
+							<div class="two op"><a href="actors_details.html">
+								<img src="img/index/act08.jpg" /></a>
+							</div>
+							<div class="three op"><a href="actors_details.html">
+								<img src="img/index/act09.jpg" /></a>
+							</div>
+						</div>						
+					</div>
+				</div> -->
+			</div>
+			<!--页脚-->
+			<div id="footer">
+				<ul>
+					<li>
+						<a href="about_yingdong.html">关于赢动</a>
+					</li>
+					<li>
+						<a href="javascript:void()">官方微博</a>
+					</li>
+					<li>
+						<a href="about_yingdong.html">联系方式</a>
+					</li>
+				</ul>
+				<p>赢动影视传媒官方网址:www.winspeedfilm.cn</p>
+				<p>沪ICP备17027591号 Copyright@ 2016-2036 上海赢动影视传媒有限公司 版权所有</p>
+			</div>
+			<!--页脚结束-->
+	</body>
+
+	<script>
+		//		轮播
+		var mySwiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
+			loop: true,
+			autoplay: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+		$(".prev").on("click", function() {
+			mySwiper.slidePrev();
+		})
+		$(".next").on("click", function() {
+			mySwiper.slideNext();
+		})
+	</script>
+
+</html>

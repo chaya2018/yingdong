@@ -1,0 +1,107 @@
+/*样式重置*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f6f5f5;
+}
+img{
+	display: block;
+	border:0 none;
+}
+ul{
+	list-style:none;
+}
+p,h1,h2,h3{
+	font-size:100%;
+	font-weight:normal;
+	font-family: "黑体";
+}
+a,img,button,input,textarea,div{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	resize: none;
+	outline: none;
+}
+input,select{
+	border: none;
+	outline: none;
+	appearance:none;
+    -moz-appearance:none;
+	-webkit-appearance:none;
+	border-radius:0;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	outline: none;
+	color: #000000;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+.arrow{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.arrow::after{
+	content:"";
+	width: 5px;
+	height: 5px;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	transform: rotate(45deg);
+}
+.box-shadow{
+	box-shadow: 0 5px 20px 0 #e7e5e5;
+	overflow: hidden;
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+.fontStyle12{
+	font-size: 12px;
+}
+.fontStyle14{
+	font-size: 14px;
+}
+.fontStyle15{
+	font-size: 15px;
+}
+.fontStyle16{
+	font-size: 16px;
+}
+.fontStyle21{
+	font-size: 21px;
+}
+.fontStyle30{
+	font-size: 30px;
+}
+.ell{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.main{
+	width: 1192px;
+	margin: 0 auto;
+}
+#index-container,
+#event-container{
+	min-width: 1192px;
+}
+.mr10{
+	margin-left: 10px;
+	line-height: 20px;
+}
